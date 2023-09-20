@@ -3,7 +3,9 @@
 Projeto em grupo para a matéria de Paradigmas da Programação em Pythom do professor Kessed
 
 ## Integrantes
-		1. Gabriel Navarro dos Sanos - 202302378536
+		
+
+                1. Gabriel Navarro dos Sanos - 202302378536
                 2. Ana Carolina - 202302377572 
 		3. Rian Carvalho dos Reis - 202302686851
 		4. Gregory Gustavo Nicoletti Ribeiro - 202302382169
