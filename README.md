@@ -7,7 +7,7 @@ Projeto em grupo para a matéria de Paradigmas da Programação em Pythom do pro
 		2. Rian Carvalho dos Reis - 202302686851
 		3. Gregory Gustavo Nicoletti Ribeiro - 202302382169
 		4. Pedro Daniel - 202302892523
-                5. Gabriel Navarro dos Sanos - 202302378536
+        5. Gabriel Navarro dos Sanos - 202302378536
 		
 ## Nome do Grupo
 
