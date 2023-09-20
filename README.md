@@ -3,11 +3,12 @@
 Projeto em grupo para a matéria de Paradigmas da Programação em Pythom do professor Kessed
 
 ## Integrantes
-		1. Ana Carolina - 202302377572
-		2. Rian Carvalho dos Reis - 202302686851
-		3. Gregory Gustavo Nicoletti Ribeiro - 202302382169
-		4. Pedro Daniel - 202302892523
-                5. Gabriel Navarro dos Sanos - 202302378536
+		1. Ana Carolina - 202302377572 
+                2. Gabriel Navarro dos Sanos - 202302378536
+		3. Rian Carvalho dos Reis - 202302686851
+		4. Gregory Gustavo Nicoletti Ribeiro - 202302382169
+		5. Pedro Daniel - 202302892523
+               
 		
 ## Nome do Grupo
 
