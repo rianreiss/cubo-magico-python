@@ -1,2 +1,26 @@
-# puzzle-python
+# Projeto Paradigmas da Programação em Pythom
+
+Projeto em grupo para a matéria de Paradigmas da Programação em Pythom do professor Kessed
+
+## Integrantes
+		1. Ana Carolina - 202302377572
+		2. Rian Carvalho dos Reis - 202302686851
+		3. Gregory Gustavo Nicoletti Ribeiro - 202302382169
+		4. Pedro Daniel - 202302892523
+    5. Gabriel Navarro dos Sanos - 
+		
+## Nome do Grupo
+
+O nome escolhido pelo grupo foi: Pythom Puzzle Solver
+
+## Tema Escolhido
+
 Puzzles como uma ferramenta para avaliar as capaciades de raciocínio lógico e solução de problemas
+
+
+
+
+## 
+
+
+__*Este Projeto foi feito em grupo para a matéria de matéria de Paradigmas da Programação em Pythom do professor Kessed e publicado no GitHub diretamente pelo Visual Studio Code.*__ 
