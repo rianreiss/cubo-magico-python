@@ -10,7 +10,7 @@ Projeto em grupo para a matéria de Paradigmas da Programação em Pythom do pro
 4. Gregory Gustavo Nicoletti Ribeiro - 202302382169
 5. Pedro Daniel - 202302892523
 
-## Nome do Grupo
+## Python Puzzle Solver (PPS)
 
 O nome escolhido pelo grupo foi: Pythom Puzzle Solver
 
