@@ -39,16 +39,66 @@ header {
         border: 1px solid $color4;
         border-radius: 5px;
         margin: auto 25px;
-        display: flex;
 
-        img {
-            fill: $color1;
-            margin: 5px;
-            max-height: fit-content;
-            max-width: fit-content;
+        button {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+
+            img {
+                padding-top: 3px;
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+
+        div {
+            &:hover {
+                position: relative;
+                width: 180px;
+                height: 250px;
+                right: 350%;
+                bottom: 100%;
+
+                ul {
+                    display: block;
+                }
+            }
+
+            position: relative;
+            width: 40px;
+            height: 40px;
+            right: 10%;
+            bottom: 110%;
+
+            ul {
+                display: none;
+                list-style: none;
+                border: 1px solid $color4;
+                max-width: 100%;
+                max-height: 100%;
+                position: relative;
+                top: 10%;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+                border-radius: 5px;
+
+                li {
+                    text-align: right;
+                    display: block;
+                    border: 1px solid $color4;
+                    background: $color2soft;
+                    max-width: 100%;
+                    width: 100px;
+                    height: 50px;
+                    line-height: 50px;
+                }
+            }
         }
     }
 }
+
 
 #div-body {
     background-color: $color1;
