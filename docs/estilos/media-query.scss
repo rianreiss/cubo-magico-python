@@ -1,0 +1,48 @@
+@media screen and (min-width: 700px) {
+    #div-body {
+        background-color: $color1;
+        display: flex;
+        justify-content: center;
+        padding: 40px 10px;
+
+        div#title {
+            margin-bottom: 5%;
+        }
+
+        #game-selection {
+            background-color: $color2;
+            width: 80%;
+            padding: 5%;
+            border: 2px solid $color4;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            div {
+                display: flex;
+                width: 90%;
+                height: fit-content;
+                flex-direction: column;
+                align-items: center;
+                padding: 3%;
+                border: 1px solid $color4;
+
+
+                .game-box {
+                    height: fit-content;
+                    width: 80%;
+                    border: 1px solid purple;
+                    margin: 5%;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        height: 100%;
+                        max-width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
