@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+#gamesbox {
+  border: 1px solid black;
+  width: 90%;
+}
+#gamesbox .gamebox {
+  border: 1px solid blue;
+  display: flex;
+  margin: 5%;
+}
+#gamesbox .gamebox .gameimg {
+  width: 100px;
+}
+#gamesbox .gamebox div {
+  margin: 5%;
+  width: 100%;
+}/*# sourceMappingURL=jogos.css.map */
