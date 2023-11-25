@@ -32,35 +32,57 @@
 
     <!-- na viasualização das pessoas, colocar um botão "+" (incluir/cadastrar nova pessoa), e fazer com que esse botão redirecione a tela para o form, ou apareça o form-->
 
-    <div>
-        <h3>Cadastrar pessoas:</h3>
+    <div id="body-div">
+        <h1>Cadastrar pessoas:</h3>
         <form action="" method="post">
             <fieldset>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome da pessoa">
+                </div>
 
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" placeholder="Nome da pessoa">
+                <div>
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Último sobrenome">
+                </div>
 
-                <label for="apelido">Apelido:</label>
-                <input type="text" name="apelido" id="apelido" placeholder="Caso tenha apelido">
+                <div>
+                    <label for="nascimento">Nascimento:</label>
+                    <input type="date" name="nascimento" id="nascimento">
+                </div>
 
-                <!-- idade (20), aniversario (21/09) = 21/09/2003 -->
-                <label for="idade">Idade:</label>
-                <input type="number" name="idade" id="idade">
-
+                <div>
+                    <label for="genero">Genero:</label>
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" name="genero" id="feminino" value="F">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="genero" id="masculino" value="M">
+                    <label for="naodeclarar">Não declarar</label>
+                    <input type="radio" name="genero" id="naodeclarar" value="ND">
+                </div>
             </fieldset>
             <fieldset>
-                <label>Genero:</label>
-                <label for="feminino">Feminino</label>
-                <input type="radio" name="genero" id="feminino" value="F">
-                <label for="masculino">Masculino</label>
-                <input type="radio" name="genero" id="masculino" value="M">
-                <label for="naodeclarar">Não declarar</label>
-                <input type="radio" name="genero" id="naodeclarar" value="ND">
+                <div>
+                    <label for="prof">Professor(a):</label>
+                    <select name="prof" id="prof">
+                        <option value="cristiano">Cristiano S. Nunes</option>
+                        <option value="giulliano">Giulliano P. Carnielli</option>
+                        <option value="joao">João Cunha</option>
+                        <option value="kesede">Kesede Julio</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="serie">Série:</label>
+                    <input type="number">
+                </div>
             </fieldset>
 
             <!--cor favorita-->
-            <label for="observacoes">Observações sobre o aluno:</label>
-            <textarea name="observacoes" id="observacoes" cols="40" rows="7" placeholder="Caso deseje inserir uma observação sobre o aluno."></textarea>
+            <fieldset>
+                <label for="observacoes">Observações sobre o aluno:</label>
+                <textarea name="observacoes" id="observacoes" cols="40" rows="7" placeholder="Caso deseje inserir uma observação sobre o aluno."></textarea>
+
+            </fieldset>
 
             <input type="submit" value="Cadastrar">
         </form>
