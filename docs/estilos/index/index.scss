@@ -5,6 +5,14 @@ $color2soft: #2d3f67;
 $color3: #102656;
 $color4: #496296;
 $color5: #004f92;
+$color6: rgb(0, 242, 255)
+00f1ff;
+
+* {
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+}
 
 body,
 html {
@@ -30,6 +38,7 @@ header {
         flex: 1 1 auto;
         margin: auto 20px;
         text-align: center;
+        font-size: 2em;
     }
 
     nav {
@@ -129,18 +138,43 @@ header {
             padding: 3%;
             border: 1px solid $color4;
 
+            a {
+                margin: 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-decoration: none;
+                border-radius: 15px;
+
+                &:hover {
+                    box-shadow: 0 0px 30px rgba(0, 242, 255, 0.5);
+                }
+            }
+
+            .title-game-box {
+                border: none;
+
+                h1 {
+                    font-size: 1.2em;
+                    text-align: center;
+                }
+            }
 
             .game-box {
+
+                border-radius: 15px;
                 height: fit-content;
-                width: 80%;
-                border: 1px solid purple;
-                margin: 5%;
+                width: 100%;
                 align-items: center;
                 justify-content: center;
+                padding: 0%;
+                border: none;
+                overflow: hidden;
 
                 img {
                     height: 100%;
-                    max-width: 50%;
+                    max-width: 100%;
                 }
             }
         }
