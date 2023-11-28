@@ -1,27 +1,30 @@
-# Projeto Paradigmas da Programação em Pythom
+# Desenv. Web em Html5, Css, Javascript e Php
 
-Projeto em grupo para a matéria de Paradigmas da Programação em Pythom do professor Kessed
+Projeto desenvolvido para a matéria de 'Desenv. Web em Html5, Css, Javascript e Php', orientada pelo professor João Ronaldo Cunha.
 
 ## Integrantes
 
-1. Ana Carolina - 202302377572 
-2. Gabriel Navarro dos Sanos - 202302378536
-3. Rian Carvalho dos Reis - 202302686851
-4. Gregory Gustavo Nicoletti Ribeiro - 202302382169
-5. Pedro Daniel - 202302892523
+1. Rian Carvalho dos Reis - 202302686851 
+2. Ana Júlia Ghirali da Silva - 202302378481
+3. Gregory Gustavo Nicoletti Ribeiro - 202302382169
+4. Caio Rafael Tilli Von Groll - 202302382584
 
-## Python Puzzle Solver (PPS)
+## Logic Puzzle Solver (LPS)
 
-O nome escolhido pelo grupo foi: Pythom Puzzle Solver
+O nome escolhido pelo grupo foi: Logic Puzzle Solver
+
+#### Uso
+
+- A utilização é feita através do GitHub Pages (link abaixo).
+- [Logic Puzzle Solver](https://rianreiss.github.io/logic-puzzle-solver/)
 
 ## Tema Escolhido
 
-Puzzles como uma ferramenta para avaliar as capaciades de raciocínio lógico e solução de problemas
+Puzzles como uma ferramenta para avaliar as capaciades de raciocínio lógico e solução de problemas.
+
+## Objetivo
+
+Acompanhar o desenvolvimento de 'alunos', gravando histórico de pontos.
 
 
-
-
-## 
-
-
-__*Este Projeto foi feito em grupo para a matéria de matéria de Paradigmas da Programação em Pythom do professor Kessed e publicado no GitHub diretamente pelo Visual Studio Code.*__ 
+__*Este Projeto foi feito em grupo para a matéria de matéria de Desenv. Web em Html5, Css, Javascript e Php do professor João Cunha e publicado no GitHub diretamente pelo Visual Studio Code.*__
