@@ -112,6 +112,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 75vh;
+    max-height: fit-content;
+    
+    
 
     
     h1{
@@ -122,19 +126,53 @@ header {
         display: flex;
         flex-direction: column;
         width: 85%;
+        margin-bottom: 0.5em;
 
         fieldset {
             margin-bottom: 0.5em;
+
+            div {
+                margin-bottom: 0.5em;
+            }
         }
+
+        input {
+            background-color: $color3;
+            border-color: $color4;
+            &::placeholder {
+                color: $color4;
+            }
+        }
+
+        select {
+            
+            background-color: $color3;
+            border-color: $color4;
+        }
+
+        #submit {
+            width: 20%;
+        }
+    }
+
+    #ver-pessoas {
+        display: flex;
+        width: 85%;
+        border: 1px solid $color4;
+        justify-content: center;
+        align-items: center;
+        min-height: 15vh;
+        margin-bottom: 0.5em;
+
     }
 }
 
 
 footer {
 
-    height: 15vh;
+    height: 10vh;
     background-color: $color2soft;
-    display: none;/* NONE */
+    display: noe;/* NONE */
     align-items: center;
     justify-content: center;
 
