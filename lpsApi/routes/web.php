@@ -16,7 +16,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PessoaController;
 
 Route::get('/', [PessoaController::class, 'index']);
+
 Route::get('/pessoas/create', [PessoaController::class, 'create']);
+Route::POST('/pessoas', [PessoaController::class, 'store']);
+
 Route::get('/pessoas/read', [PessoaController::class, 'read']);
 Route::get('/pessoas/update', [PessoaController::class, 'update']);
 Route::get('/pessoas/delete', [PessoaController::class, 'delete']);

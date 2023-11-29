@@ -17,8 +17,7 @@ return new class extends Migration
             $table->string('sobrenome');
             $table->string('genero');
             $table->string('professor');
-            $table->integer('serie');
-            $table->text('descricao');
+            $table->date('nascimento');
             $table->timestamps();
         });
     }

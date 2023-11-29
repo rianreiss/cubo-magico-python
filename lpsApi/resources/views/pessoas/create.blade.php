@@ -39,7 +39,8 @@
 
         <h1>Cadastrar pessoas:</h3>
 
-            <form action="/teste" method="get">
+            <form action="/pessoas" method="POST">
+                @csrf
                 <fieldset>
                     <div>
                         <label for="nome">Nome:</label>
@@ -68,8 +69,8 @@
                 </fieldset>
                 <fieldset>
                     <div>
-                        <label for="prof">Professor(a):</label>
-                        <select name="prof" id="prof">
+                        <label for="professor">Professor(a):</label>
+                        <select name="professor" id="professor">
                             <option value="cristiano">Cristiano S. Nunes</option>
                             <option value="giulliano">Giulliano P. Carnielli</option>
                             <option value="joao">João Cunha</option>
@@ -78,7 +79,7 @@
                     </div>
                     <div>
                         <label for="serie">Série:</label>
-                        <input type="number">
+                        <input type="integer">
                     </div>
                 </fieldset>
 

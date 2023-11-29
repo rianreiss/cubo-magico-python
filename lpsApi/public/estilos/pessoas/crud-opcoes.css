@@ -103,6 +103,9 @@ header nav div ul li {
   flex-direction: column;
   align-items: center;
 }
+#body-div #container1 input{
+  color: black;
+}
 #body-div #container1 h1 {
   font-size: 1.4em;
 }
