@@ -29,8 +29,6 @@ class PessoaController extends Controller
         $event->nascimento = $request->nascimento;
         $event->genero = $request->genero;
         $event->professor = $request->professor;
-        $event->serie = $request->serie;
-        $event->descricao = $request->descricao;
         
         $event->save();
 

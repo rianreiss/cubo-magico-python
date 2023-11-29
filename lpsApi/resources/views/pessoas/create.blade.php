@@ -67,7 +67,7 @@
                         <input type="radio" name="genero" id="naodeclarar" value="ND">
                     </div>
                 </fieldset>
-                <fieldset>
+            <fieldset>
                     <div>
                         <label for="professor">Professor(a):</label>
                         <select name="professor" id="professor">
@@ -77,19 +77,20 @@
                             <option value="kesede">Kesede Julio</option>
                         </select>
                     </div>
-                    <div>
+            <!-- <div>
                         <label for="serie">Série:</label>
                         <input type="integer">
                     </div>
                 </fieldset>
+            
 
-                <!--cor favorita-->
+                -cor favorita-
                 <fieldset>
                     <label for="observacoes">Observações sobre o aluno:</label>
                     <textarea name="observacoes" id="observacoes" cols="40" rows="7"
                         placeholder="Caso deseje inserir uma observação sobre o aluno."></textarea>
 
-                </fieldset>
+                </fieldset>-->
 
                 <input id="submit" type="submit" value="Cadastrar">
             </form>
