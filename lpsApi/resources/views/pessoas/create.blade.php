@@ -39,26 +39,26 @@
 
         <h1>Cadastrar pessoas:</h3>
 
-            <form action="/pessoas" method="POST">
+            <form action="/create" method="POST">
                 @csrf
                 <fieldset>
                     <div>
-                        <label for="nome">Nome:</label>
+                        <label for="title">Nome:</label>
                         <input type="text" name="nome" id="nome" placeholder="Nome da pessoa">
                     </div>
 
                     <div>
-                        <label for="sobrenome">Sobrenome:</label>
+                        <label for="title">Sobrenome:</label>
                         <input type="text" name="sobrenome" id="sobrenome" placeholder="Último sobrenome">
                     </div>
 
                     <div>
-                        <label for="nascimento">Nascimento:</label>
+                        <label for="title">Nascimento:</label>
                         <input type="date" name="nascimento" id="nascimento">
                     </div>
 
                     <div>
-                        <label for="genero">Genero:</label>
+                        <label for="title">Genero:</label>
                         <label for="feminino">Feminino</label>
                         <input type="radio" name="genero" id="feminino" value="F">
                         <label for="masculino">Masculino</label>
@@ -67,9 +67,9 @@
                         <input type="radio" name="genero" id="naodeclarar" value="ND">
                     </div>
                 </fieldset>
-            <fieldset>
+                <fieldset>
                     <div>
-                        <label for="professor">Professor(a):</label>
+                        <label for="title">Professor(a):</label>
                         <select name="professor" id="professor">
                             <option value="cristiano">Cristiano S. Nunes</option>
                             <option value="giulliano">Giulliano P. Carnielli</option>
@@ -77,22 +77,8 @@
                             <option value="kesede">Kesede Julio</option>
                         </select>
                     </div>
-            <!-- <div>
-                        <label for="serie">Série:</label>
-                        <input type="integer">
-                    </div>
                 </fieldset>
-            
-
-                -cor favorita-
-                <fieldset>
-                    <label for="observacoes">Observações sobre o aluno:</label>
-                    <textarea name="observacoes" id="observacoes" cols="40" rows="7"
-                        placeholder="Caso deseje inserir uma observação sobre o aluno."></textarea>
-
-                </fieldset>-->
-
-                <input id="submit" type="submit" value="Cadastrar">
+                <input type="submit" value="Cadastrar">
             </form>
 
             <div id="ver-pessoas">

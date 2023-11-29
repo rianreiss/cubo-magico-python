@@ -30,7 +30,7 @@
                 </li>
 
                 <li>
-                    <a href="/pessoas/read">
+                    <a href="/pessoas/read/1">
                         <input type="submit" id="submit" value="Read (Ler)">
                     </a>
                 </li>

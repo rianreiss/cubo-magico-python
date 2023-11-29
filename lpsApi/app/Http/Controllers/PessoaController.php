@@ -20,6 +20,7 @@ class PessoaController extends Controller
         return view ('pessoas.create');
     }
 
+
     public function store(Request $request){
 
         $event = new Lps;
@@ -33,11 +34,14 @@ class PessoaController extends Controller
         $event->save();
 
 
-        return redirect('/');
+        return view('crud-opcoes');
     }
 
-    public function read(){
-        return view ('pessoas.read');
+    public function show($id){
+
+        $event = Lps::findOrFail($id);
+
+        return view ('pessoas.read', ['event' => $event]);
     }
 
     public function update(){

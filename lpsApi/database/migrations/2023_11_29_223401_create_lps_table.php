@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('nome');
             $table->string('sobrenome');
+            $table->date('nascimento');
             $table->string('genero');
             $table->string('professor');
-            $table->date('nascimento');
             $table->timestamps();
         });
     }
