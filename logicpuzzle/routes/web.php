@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Models\User;
+use App\Models\Pessoa;
+use App\Http\Controllers\PessoaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,13 +33,16 @@ Route::get('/create', function () {
 });
 
 
+Route::POST('/create', [PessoaController::Class, 'store']);
+
+
 
 
 
 
 Route::get('/createnewuser', function () {
 
-    User::create([
+    $pessoa = User::create([
         'name' => 'rian',
         'email' => 'rianreis2109@gmail.com',
         'password' => 'password'
@@ -46,6 +51,15 @@ Route::get('/createnewuser', function () {
 
 
 
-    return view('crud-options');
+    return view('crud-options', ['pessoa' => $pessoa]);
 });
 
+
+
+Route::get('/find/{id}', function($id) {
+
+    $pessoa = User::find($id);
+
+    return view('single-pessoa', ['pessoa' => $pessoa]);
+
+});

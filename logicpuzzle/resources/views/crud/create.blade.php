@@ -39,7 +39,7 @@
 
         <h1>Cadastrar pessoas:</h3>
 
-            <form action="/create/pessoa" method="POST">
+            <form action="/create" method="POST">
                 @csrf
                 <fieldset>
                     <div>
