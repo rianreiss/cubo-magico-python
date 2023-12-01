@@ -19,4 +19,23 @@ class PessoaController extends Controller
         
         return view('crud-options');
     }
+
+    public function find($id){
+
+        $pessoa = Pessoa::find($id);
+
+        return view('crud/read-id', ['pessoa' => $pessoa]);
+    }
+
+    public function delete($id){
+
+        $pessoa = Pessoa::destroy($id);
+
+        return view('crud/read');
+    }
+
+    public function update($id){
+
+        
+    }
 }

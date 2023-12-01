@@ -24,16 +24,15 @@ Route::get('/', function () {
 Route::get('/read', function () {
     return view('crud/read');
 });
-Route::get('/read/1', function () {
-    return view('crud/read-id');
-});
+Route::get('/read-id/{id}', [PessoaController::Class, 'find']);
 
-Route::get('/create', function () {
-    return view('crud/create');
-});
+Route::get('/delete/{id}', [PessoaController::Class, 'delete']);
 
 
 Route::POST('/create', [PessoaController::Class, 'store']);
+Route::get('/create',  function () {
+    return view('crud/create');
+});
 
 
 
