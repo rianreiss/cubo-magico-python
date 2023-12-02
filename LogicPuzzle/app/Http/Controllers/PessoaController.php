@@ -9,7 +9,6 @@ class PessoaController extends Controller
 {
     public function index()
     {
-        $pessoas = Pessoa::all();
         return view('welcome');
     }
 
@@ -21,40 +20,47 @@ class PessoaController extends Controller
     public function store(Request $request)
     {
         $pessoa = new Pessoa();
-        $pessoa->title = $request->input('title');
-        $pessoa->content = $request->input('content');
+        $pessoa->nome = $request->input('nome');
+        $pessoa->sobrenome = $request->input('sobrenome');
+        $pessoa->professor = $request->input('professor');
         $pessoa->save();
 
-        return redirect()->route('pessoas.index');
+        return view('welcome');
     }
 
-    public function show($id)
+    public function read(Request $request)
     {
+        $id = $request->input('id');
         $pessoa = Pessoa::find($id);
-        return view('pessoa.show', compact('pessoa'));
+
+        return view('pessoas.readed', ['pessoa' => $pessoa]);
     }
 
-    public function edit($id)
+    public function edit(Request $request)
     {
+        $id = $request->input('id');
         $pessoa = Pessoa::find($id);
-        return view('pessoas.edit', compact('pessoa'));
+
+        return view('pessoas.update', ['pessoa' => $pessoa]);
     }
 
     public function update(Request $request, $id)
     {
         $pessoa = Pessoa::find($id);
-        $pessoa->title = $request->input('title');
-        $pessoa->content = $request->input('content');
+        $pessoa->nome = $request->input('nome');
+        $pessoa->sobrenome = $request->input('sobrenome');
+        $pessoa->professor = $request->input('professor');
         $pessoa->save();
 
-        return redirect()->route('pessoa.index');
+        return view('welcome');
     }
 
-    public function destroy($id)
+    public function delete(Request $request)
     {
+        $id = $request->input('id');
         $pessoa = Pessoa::find($id);
         $pessoa->delete();
 
-        return redirect()->route('pessoa.index');
+        return view('welcome');
     }
 }

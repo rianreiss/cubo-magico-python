@@ -5,10 +5,11 @@
 @section('content')
     <div class="container">
 
-        <h1>Cadastrar pessoa:</h1>
+        <h1>Editar pessoa:</h1>
 
-            <form action="/" method="post">
+            <form action="/update/{{ $pessoa->id }}" method="post">
                 @csrf
+                @method('PUT')
                 <fieldset>
                     <div>
                         <label for="title">Nome:</label>

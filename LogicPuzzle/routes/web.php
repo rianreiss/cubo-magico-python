@@ -14,8 +14,29 @@ use App\Http\Controllers\PessoaController;
 |
 */
 
-Route::resource('pessoas', PessoaController::class);
 
-Route::get('/rato', function () {
-    return view('cpessoas.create');
+Route::resource('/', PessoaController::class);
+
+
+Route::get('/read', function () {
+    return view('pessoas.read');
 });
+Route::post('/read-id', [PessoaController::Class, 'read']);
+
+
+
+
+Route::get('/update', function () {
+    return view('pessoas.edit');
+});
+Route::post('/update', [PessoaController::Class, 'edit']);
+
+Route::put('/update/{id}', [PessoaController::Class, 'update']);
+
+Route::get('/update/{id}', [PessoaController::Class, 'index']);
+
+
+Route::get('/delete', function () {
+    return view('pessoas.delete');
+});
+Route::post('/delete', [PessoaController::Class, 'delete']);

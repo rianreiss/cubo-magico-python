@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opções CRUD</title>
     <link rel="stylesheet" href="/estilos/crud-options.css">
+    <link rel="stylesheet" href="/estilos/create.css">
 </head>
 
 <body>
@@ -37,7 +38,7 @@
             <div>
                 <ul>
                     <li>
-                        <a href="{{ route('pessoas.create') }}">
+                        <a href="/create">
                             <input type="submit" id="submit" value="Create (Criar)">
                         </a>
                     </li>
