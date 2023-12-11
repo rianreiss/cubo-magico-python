@@ -24,7 +24,9 @@ Route::get('/read', function () {
 Route::post('/read-id', [PessoaController::Class, 'read']);
 
 
-
+Route::get('/index', function () {
+    return view('index');
+});
 
 Route::get('/update', function () {
     return view('pessoas.edit');

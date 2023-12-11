@@ -1,0 +1,96 @@
+* {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-size: 1rem;
+  }
+  
+  html,
+  body {
+    box-sizing: border-box;
+    min-width: 500px;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  #header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid lightgray;
+    background-color: #17233a;
+    color: white;
+    text-align: center;
+  }
+  #header div {
+    margin: 0.5em;
+    font-size: 2rem;
+  }
+  #header div div {
+    position: relative;
+    margin: 0;
+  }
+  #header div div svg:hover {
+    cursor: pointer;
+  }
+  #header div div #meuDropdown {
+    display: none;
+  }
+  #header div div .dropdown-content {
+    position: absolute;
+    right: 0;
+    top: 55px;
+    background-color: #3b5481;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    border-radius: 10px;
+  }
+  #header div div .dropdown-content ul {
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  #header div div .dropdown-content ul a {
+    text-decoration: none;
+  }
+  #header div div .dropdown-content ul a li {
+    font-size: 1.3rem;
+    border-radius: 5px;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #header div div .dropdown-content ul a li:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #17233a;
+  }
+  
+  .wrapper {
+    flex: 1;
+  }
+  
+  #footer {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid lightgray;
+    background-color: #17233a;
+    color: white;
+  }
+  #footer div {
+    margin: 20px;
+    align-items: center;
+  }
+  #footer div p {
+    margin-bottom: 0rem;
+  }
+  #footer #direitos {
+    text-align: center;
+    margin-top: 0px;
+  }/*# sourceMappingURL=layout.css.map */
