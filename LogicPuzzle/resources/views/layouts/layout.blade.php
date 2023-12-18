@@ -66,7 +66,7 @@
     </header>
 
     <div class="wrapper">
-        @yeld('content')
+        @yield('content')
     </div>
 
     <footer>

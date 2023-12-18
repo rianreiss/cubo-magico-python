@@ -14,8 +14,10 @@ use App\Http\Controllers\PessoaController;
 |
 */
 
-
-Route::resource('/', PessoaController::class);
+/*Route::redirect('/', '/welcome');*/
+Route::get('/', function () {
+    return view('index');
+});
 
 
 Route::get('/read', function () {
